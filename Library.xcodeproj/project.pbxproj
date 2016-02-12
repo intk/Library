@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C009B6ED1C6E3BE00021F112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009B6EC1C6E3BE00021F112 /* AppDelegate.swift */; };
-		C009B6EF1C6E3BE00021F112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009B6EE1C6E3BE00021F112 /* ViewController.swift */; };
 		C009B6F21C6E3BE00021F112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C009B6F01C6E3BE00021F112 /* Main.storyboard */; };
 		C009B6F41C6E3BE00021F112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C009B6F31C6E3BE00021F112 /* Assets.xcassets */; };
 		C009B6F71C6E3BE00021F112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C009B6F51C6E3BE00021F112 /* LaunchScreen.storyboard */; };
 		C009B7021C6E3BE00021F112 /* LibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009B7011C6E3BE00021F112 /* LibraryTests.swift */; };
 		C009B70D1C6E3BE00021F112 /* LibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009B70C1C6E3BE00021F112 /* LibraryUITests.swift */; };
+		C009B71B1C6E3CC30021F112 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = C009B71A1C6E3CC30021F112 /* Resources */; };
+		C009B7201C6E3E660021F112 /* AuthorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009B71F1C6E3E660021F112 /* AuthorsViewController.swift */; };
+		C009B7261C6E43FC0021F112 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009B7251C6E43FC0021F112 /* BooksTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		C009B6E91C6E3BE00021F112 /* Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C009B6EC1C6E3BE00021F112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C009B6EE1C6E3BE00021F112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C009B6F11C6E3BE00021F112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C009B6F31C6E3BE00021F112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C009B6F61C6E3BE00021F112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		C009B7081C6E3BE00021F112 /* LibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C009B70C1C6E3BE00021F112 /* LibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryUITests.swift; sourceTree = "<group>"; };
 		C009B70E1C6E3BE00021F112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C009B71A1C6E3CC30021F112 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		C009B71F1C6E3E660021F112 /* AuthorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorsViewController.swift; path = "View Controllers/AuthorsViewController.swift"; sourceTree = "<group>"; };
+		C009B7251C6E43FC0021F112 /* BooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BooksTableViewController.swift; path = "View Controllers/BooksTableViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,13 @@
 		C009B6EB1C6E3BE00021F112 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				C009B71E1C6E3DEC0021F112 /* View Controllers */,
 				C009B6EC1C6E3BE00021F112 /* AppDelegate.swift */,
-				C009B6EE1C6E3BE00021F112 /* ViewController.swift */,
 				C009B6F01C6E3BE00021F112 /* Main.storyboard */,
 				C009B6F31C6E3BE00021F112 /* Assets.xcassets */,
 				C009B6F51C6E3BE00021F112 /* LaunchScreen.storyboard */,
 				C009B6F81C6E3BE00021F112 /* Info.plist */,
+				C009B71A1C6E3CC30021F112 /* Resources */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -123,6 +128,15 @@
 				C009B70E1C6E3BE00021F112 /* Info.plist */,
 			);
 			path = LibraryUITests;
+			sourceTree = "<group>";
+		};
+		C009B71E1C6E3DEC0021F112 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C009B71F1C6E3E660021F112 /* AuthorsViewController.swift */,
+				C009B7251C6E43FC0021F112 /* BooksTableViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C009B71B1C6E3CC30021F112 /* Resources in Resources */,
 				C009B6F71C6E3BE00021F112 /* LaunchScreen.storyboard in Resources */,
 				C009B6F41C6E3BE00021F112 /* Assets.xcassets in Resources */,
 				C009B6F21C6E3BE00021F112 /* Main.storyboard in Resources */,
@@ -259,8 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C009B6EF1C6E3BE00021F112 /* ViewController.swift in Sources */,
+				C009B7201C6E3E660021F112 /* AuthorsViewController.swift in Sources */,
 				C009B6ED1C6E3BE00021F112 /* AppDelegate.swift in Sources */,
+				C009B7261C6E43FC0021F112 /* BooksTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Library/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = INTK.Library;
+				PRODUCT_BUNDLE_IDENTIFIER = INTK.LibraryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -415,7 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Library/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = INTK.Library;
+				PRODUCT_BUNDLE_IDENTIFIER = INTK.LibraryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
